@@ -97,13 +97,13 @@ public class UserController {
         return Result.ok(userDTO);
     }
 
-//    @PostMapping("/sign")
-//    public Result sign(){
-//        return userService.sign();
-//    }
+    @PostMapping("/sign")
+    public Result sign(){
+        return userService.sign();
+    }
 
-//    @GetMapping("/sign/count")
-//    public Result signCount(){
-//        return userService.signCount();
-//    }
+    @GetMapping("/sign/count")
+    public Result signCount(){
+        return userService.signCount();
+    }
 }

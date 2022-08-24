@@ -341,7 +341,7 @@ public class VoucherOrderServiceImpl extends ServiceImpl<VoucherOrderMapper, Vou
 ////        }
 //    }
 
-    @Transactional
+    @Transactional(rollbackFor = Exception.class)
     public void createVoucherOrder(VoucherOrder voucherOrder) {
         // 5.一人一单
         Long userId = voucherOrder.getUserId();
